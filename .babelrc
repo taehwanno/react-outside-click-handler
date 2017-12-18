@@ -1,12 +1,14 @@
 {
+  "ignore": ["node_modules/**"],
   "presets": [["env", {"modules": false}], "react"],
   "plugins": [
-    "external-helpers",
     "transform-object-rest-spread"
   ],
   "env": {
     "test": {
-      "presets": ["airbnb"]
+      "plugins": [
+        "transform-es2015-modules-commonjs"
+      ]
     }
   }
 }
