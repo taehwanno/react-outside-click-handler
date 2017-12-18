@@ -1,9 +1,13 @@
 {
-  "presets": ["es2015", "react"],
+  "ignore": ["node_modules/**"],
+  "presets": [["env", {"modules": false}], "react"],
+  "plugins": [
+    "transform-object-rest-spread"
+  ],
   "env": {
     "test": {
       "plugins": [
-        ["__coverage__", { "ignore": "*.spec.*" }]
+        "transform-es2015-modules-commonjs"
       ]
     }
   }
