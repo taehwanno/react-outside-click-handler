@@ -11,11 +11,10 @@ const prod = process.env.PRODUCTION;
 let plugins = [
   babel({
     exclude: 'node_modules/**',
+    plugins: ['external-helpers'],
   }),
   nodeResolve(),
-  commonjs({
-    include: ['node_modules/**'],
-  }),
+  commonjs(),
 ];
 
 let output;
