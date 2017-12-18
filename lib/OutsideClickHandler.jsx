@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 
 import { addEventListener } from 'consolidated-events';
@@ -15,7 +15,7 @@ const defaultProps = {
   useCapture: true,
 };
 
-export default class OutsideClickHandler extends Component {
+export default class OutsideClickHandler extends React.Component {
   constructor(...args) {
     super(...args);
 
@@ -25,7 +25,12 @@ export default class OutsideClickHandler extends Component {
 
   componentDidMount() {
     const { useCapture } = this.props;
-    this.removeEventListener = addEventListener(document, 'click', this.onOutsideClick, { capture: useCapture });
+    this.removeEventListener = addEventListener(
+      document,
+      'click',
+      this.onOutsideClick,
+      { capture: useCapture },
+    );
   }
 
   componentWillUnmount() {
