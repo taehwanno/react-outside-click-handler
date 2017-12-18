@@ -27,7 +27,10 @@
     "test:coverage": "NODE_ENV=test karma start --coverage",
     "test:watch": "npm test -- --auto-watch --no-single-run"
   },
-  "dependencies": {},
+  "dependencies": {
+    "consolidated-events": "^1.1.1",
+    "prop-types": "^15.6.0"
+  },
   "devDependencies": {
     "babel": "^6.5.2",
     "babel-core": "^6.18.2",
