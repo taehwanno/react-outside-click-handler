@@ -59,9 +59,21 @@
     "uglify-es": "^3.2.2"
   },
   "jest": {
+    "moduleDirectories": [
+      "node_modules",
+      "<rootDir>/lib"
+    ],
+    "modulePaths": [
+      "<rootDir>",
+      "<rootDir>/lib/"
+    ],
     "setupFiles": [
       "<rootDir>/test/setup.js"
-    ]
+    ],
+    "transform": {
+      "^.+\\.jsx?$": "babel-jest"
+    },
+    "verbose": true
   },
   "lint-staged": {
     "*.{js,jsx}": [
