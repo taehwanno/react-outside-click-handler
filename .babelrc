@@ -1,7 +1,8 @@
 {
-  "presets": ["es2015", "react"],
+  "presets": [["env", {"modules": false}], "react"],
   "env": {
     "test": {
+      "presets": ["airbnb"],
       "plugins": [
         ["__coverage__", { "ignore": "*.spec.*" }]
       ]
