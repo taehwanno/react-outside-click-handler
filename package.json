@@ -22,6 +22,7 @@
     "build": "webpack --config webpack.dist.config.js --progress",
     "lint": "eslint example lib test --ext .js,.jsx",
     "precommit": "lint-staged",
+    "prepush": "yarn lint && yarn test",
     "serve": "cross-env NODE_ENV=development webpack-dev-server --config webpack.dev.config.js",
     "test": "cross-env NODE_ENV=test jest --config jest.config.json",
     "test:coverage": "yarn test --coverage",
