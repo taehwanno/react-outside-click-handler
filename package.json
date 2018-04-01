@@ -24,8 +24,8 @@
     "precommit": "yarn lint",
     "serve": "cross-env NODE_ENV=development webpack-dev-server --config webpack.dev.config.js --env.dev --inline --watch --host 0.0.0.0",
     "test": "cross-env NODE_ENV=test jest --config jest.config.json",
-    "test:coverage": "npm run test -- --coverage",
-    "test:watch": "npm run test -- --watch",
+    "test:coverage": "yarn test --coverage",
+    "test:watch": "yarn test --watch",
     "ncu": "ncu"
   },
   "devDependencies": {
@@ -38,6 +38,7 @@
     "babel-preset-react": "^6.16.0",
     "classnames": "^2.2.5",
     "clean-webpack-plugin": "^0.1.14",
+    "coveralls": "^3.0.0",
     "cross-env": "^5.1.4",
     "css-loader": "^0.26.1",
     "enzyme": "^3.3.0",
