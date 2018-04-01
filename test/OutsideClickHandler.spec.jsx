@@ -25,7 +25,7 @@ describe('<OutsideClickHandler />', () => {
     it('should remove click event listener to document', () => {
       const removeEventListener = jest.spyOn(document, 'removeEventListener');
       const wrapper = shallow(<OutsideClickHandler />);
-      const handleOutsideClick = wrapper.instance().handleOutsideClick;
+      const { handleOutsideClick } = wrapper.instance();
       wrapper.unmount();
       expect(removeEventListener).toHaveBeenCalledTimes(1);
       expect(removeEventListener).toHaveBeenCalledWith('click', handleOutsideClick, true);
