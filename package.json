@@ -19,7 +19,7 @@
   "homepage": "https://github.com/taehwanno/react-outside-click-handler",
   "scripts": {
     "start": "yarn serve",
-    "build": "yarn lint && webpack --config webpack.dist.config.js --progress",
+    "build": "webpack --config webpack.dist.config.js --progress",
     "lint": "eslint example lib test --ext .js,.jsx",
     "precommit": "yarn lint",
     "serve": "cross-env NODE_ENV=development webpack-dev-server --config webpack.dev.config.js --env.dev --inline --watch --host 0.0.0.0",
