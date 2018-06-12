@@ -1,5 +1,7 @@
 # react-outside-click-handler [![Build Status](https://travis-ci.org/taehwanno/react-outside-click-handler.svg?branch=master)](https://travis-ci.org/taehwanno/react-outside-click-handler) [![Coverage Status](https://coveralls.io/repos/github/taehwanno/react-outside-click-handler/badge.svg)](https://coveralls.io/github/taehwanno/react-outside-click-handler) [![npm version](https://badge.fury.io/js/react-outside-click-handler.svg)](https://badge.fury.io/js/react-outside-click-handler)
 
+> :warning: This repository not maintained. Please check out [airbnb/react-outside-click-handler](https://github.com/airbnb/react-outside-click-handler).
+
 React Component for handling click events outside a specific component.
 
 **Table of contents**
@@ -49,4 +51,4 @@ This component is inspired by [airbnb/react-dates's OutsideClickHandler](https:/
 
 ## License
 
-MIT © [Taehwan, Noh (taehwanno)](https://github.com/taehwanno)
+MIT © [Taehwan Noh](https://github.com/taehwanno)
